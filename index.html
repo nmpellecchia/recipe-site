@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="bg-img"></div>
+            <form class="search-bar">
+                <input type="text" list="ing-list" placeholder="Search for an ingredient..." required autocapitalize="on">
+                <datalist id="ing-list"></datalist>
+            </form>
+            <h1 class="main-title">Random Recipes Online</h1>
+        </main>
+        <ul class="categories">
+            <li class="category" id="Vegetarian">
+                <img src="https://www.themealdb.com/images/ingredients/carrot.png" alt="veggie-alt">
+                <label for="vegetarian">Vegetarian</label>
+            </li>
+            <li class="category" id="Beef">
+                <img src="https://www.themealdb.com/images/ingredients/beef.png" alt="beef-alt">
+                <label for="Beef">Beef</label>
+            </li>
+            <li class="category" id="Chicken">
+                <img src="https://www.themealdb.com/images/ingredients/chicken.png" alt="chicken-alt">
+                <label for="Chicken">Chicken</label>
+            </li>
+            <li class="category" id="Seafood">
+                <img src="https://www.themealdb.com/images/ingredients/oysters.png" alt="seafood-alt">
+                <label for="Seafood">Seafood</label>
+            </li>
+            <li class="category" id="Dessert">
+                <img src="https://www.themealdb.com/images/ingredients/chocolate.png" alt="dessert-alt">
+                <label for="Dessert">Dessert</label>
+            </li>
+        </ul>
+        <div class="recipes">
+                <div class="recipe">
+                        <span class="recipe-name"></span>
+                        <img class="recipe-img" src="" alt="recipe-img">
+                </div>
+                <div class="ingredients">
+                    <h4>Ingredients</h4>
+                    <ul class="ingredient-list">
+                </ul>
+                </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <p class="instructions-text"></p>
+            </div>
+        </div>
+        <footer>
+            <p>Made by Nicolas Pellecchia. Like what you see? Contact me!</p>
+            <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
